@@ -12,4 +12,5 @@ else
    echo " Script: ${SETUP_SCRIPT} is not set or does not exist" >> /logs/startapp.log
 fi
 
-exec node server.js
+#exec node server.js
+exec npm start
