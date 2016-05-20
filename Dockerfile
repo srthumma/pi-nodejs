@@ -35,7 +35,8 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 RUN useradd -d /opt/apps -m node
 
 RUN mkdir /opt/boot
-ADD scripts/*.sh* /opt/boot/
+ADD ./*.sh* /opt/boot/
+RUN chmod +x /opt/boot/*.sh
 
 VOLUME ["/logs","/opt/apps"]
 
