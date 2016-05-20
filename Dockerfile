@@ -39,6 +39,6 @@ ADD ./*.sh* /opt/boot/
 RUN chmod +x /opt/boot/*.sh
 
 VOLUME ["/logs","/opt/apps"]
-
+EXPOSE 3000
 ENTRYPOINT  ["/opt/boot/bootstrap.sh"]
 CMD [ "/opt/boot/startapp.sh" ]
